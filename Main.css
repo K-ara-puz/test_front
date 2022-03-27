@@ -1,0 +1,341 @@
+.wrapper {
+    max-width: 1920px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+
+}
+
+.main {
+
+    width: 70%;
+    margin: 0 auto;
+}
+
+.textBig {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    color: #484848;
+}
+.textNorm {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;   
+    line-height: 140%;
+}
+
+.firstSec {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    height: 765px;   
+    background-image: url("png/1.png");
+    background-repeat: no-repeat;
+
+}
+.firstSecPhone {
+    display: none;
+}
+.butOrdFirst {
+    width: 270px;
+    height: 60px;
+    background-color: #75E169 ;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    }
+    .butOrdFirst:hover {
+        border: 2px solid #67AEFC;
+        }
+        .butOrdFirst:active {
+            background: #67AEFC;
+            color: #fff;            }
+
+    .circle {
+        content: "●";
+        font-size: 36px;
+        color: #75E169;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+    .block__title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 175%;
+    }
+    .block__title.active .circle {
+        color: #67AEFC;
+    }
+    .block__title.active  {
+        font-weight: 700;
+        font-size: 21px;
+    }
+  
+
+    .block {}
+
+    .block__item {
+        margin: 0px 0px 20px 0px;
+        border-radius: 15px;
+        background-color: #fff;
+        min-height: 60px;
+        padding: 5px 30px 10px 30px;
+        align-items: center;
+        vertical-align: middle;
+    }
+ 
+    .block__title {
+        position: relative;
+        cursor: pointer;
+        
+    }
+    .block__title:before,
+    .block__title:after {
+        content: '';
+        width: 10px;
+        height: 1px;
+        background-color: #000000;
+        position: absolute;
+        top: 28px;
+        transition: all 0.3s ease 0s;
+    }
+    .block__title:before {
+        transform: rotate(40deg);
+        right: 7px;
+    }
+    .block__title:after {
+        transform: rotate(-40deg);
+        right: 0;
+    }
+
+    .block__title.active:before {
+        transform: rotate(-40deg);
+    }
+    .block__title.active:after {
+        transform: rotate(40deg);
+    }
+    
+    .block__text {
+        padding: 10px 0px 0px 20px;
+        margin: 30px 0px 30px 10px;
+        display: none;
+        border-left: 1px solid #000000;
+    }
+  
+    .secondSec {
+        background-color: #DAECFF ;
+        width: 100%;
+        background-image: url("png/bag.png");
+        background-repeat: no-repeat;
+        background-position: 98% 90%;
+    }
+    .thirdSec {
+        background-image: url("png/bg_slider.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 908px;
+    }
+    .fourSec {
+        width: 100%;
+        margin: 0 auto;
+        background-image: url("png/examples.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: #DAECFF ;
+        
+    }
+    .card {
+        border-radius: 10%;
+
+    }
+    .card1 {
+        border-radius: 15px;
+        position: relative;
+    }
+    .card:hover {
+        background-color: #67AEFC;
+
+    }
+    .card1:hover {
+            background-color: #67AEFC;
+            transition: all 1s ease;
+  
+    }
+    .card1:hover .opisHide{
+        display: block;
+        transition: all 1s ease;
+
+    }
+    .opisHide {
+        display: none;
+        color: #fff;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        right: 35%;
+    }
+    .card:hover ~ .opisHide {
+        display: block;
+
+    }
+    .card1:hover ~ .opisHide {
+        display: block;
+    }
+    .card1:hover ~ .hidetext1 {
+        display: block;
+
+    }
+    .card1:hover img {
+        position: relative;
+        visibility: hidden;
+    }
+    .hidetext1 {
+        font-weight: 700;
+        font-size: 21px;
+    }
+
+.h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    color: #111111;;
+    line-height: 125%;
+    margin-bottom: 30px;
+}
+.fiveSec {
+    width: 100%;
+    margin: 0 auto;
+    background: no-repeat center url("png/Orders.png");
+    background-color: #fff;
+    height: 725px;
+    background-position: center;
+}
+.sixSec {
+    width: 100%;
+    margin: 0 auto;
+    background: no-repeat center url("png/phoneSec.png");
+    background-color: #DAECFF;
+    height: 775px;
+    background-position: center;
+}
+.inpCall {
+    background: #FFFFFF;
+    border: 1px solid #6EB1FB;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 58px;
+    padding: 0px 10px 0px 10px;
+}
+
+.inpCall::placeholder {
+    color: #939393;
+    font-weight: 400;
+    font-size: 16px;
+}
+.inpCall::placeholder {
+    color: #939393;
+    font-weight: 400;
+    font-size: 16px;
+}
+.phoneSmall {
+    display: none;    
+}
+.footer {
+    background-color: #64ABF9;
+    height: 469px;
+}
+.foot_block {
+    margin: auto;
+    width: 70%;
+    
+}
+input:focus {
+    outline: none;
+    border: 2px solid #67AEFC;
+}
+.br {
+    display: none;
+}
+@media (max-width: 760px) {
+    .br {
+        display: block;
+    }
+    .block__title:before,
+    .block__title:after {
+        margin-left: 15%;
+        margin-left: 20px;
+    }
+    .h3 {
+        font-weight: 800;
+        font-size: 23px;
+        line-height: 150%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .footer {
+        height: 600px;
+    }
+    .foot_block {
+        margin: auto;
+        width: 100%;
+        
+    }
+    .secondSec {
+        background-image: none;
+    }
+    .thirdSec {
+        background-image: url("png/shape1.png");
+        background-position: 0% 1.5%;
+        background-size: 7%;
+        margin-bottom: -4%;
+    }
+    .fourSec {
+        background-image: none;
+    }
+    .fiveSec {
+        background-image: none;
+        height: auto;
+        padding-top: 0px;
+    }
+    .sixSec {
+        height: 500px;
+        padding-top: 10px;
+
+    }
+    .phoneSmall {
+        display: block; 
+     }
+    .firstSec {
+        background-image: none;
+        height: auto;
+        padding-top: 0px;
+    }
+    .firstSecPhone {
+       display: block;
+       background-image: url("png/ill.png");
+    }
+    .main {
+        width: 100%;
+    }
+    .mainBack {
+        z-index: 1;
+        
+        
+    }
+    .textBig {
+        font-weight: 800;
+        font-size: 27px;  
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .butOrdFirst {
+       width: 100%;
+    }
+}
